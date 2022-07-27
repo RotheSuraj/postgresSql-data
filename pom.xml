@@ -48,7 +48,17 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 	</dependencies>
+	<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-jdbc</artifactId>
+</dependency>
 
 	<build>
 		<plugins>
@@ -68,16 +78,16 @@
       			</configuration>
 			</plugin>
 			<plugin>
-			<artifactId>maven-assembly-plugin</artifactId>
+				<artifactId>maven-assembly-plugin</artifactId>
 			</plugin>
 			<plugin><groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
+            	<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-        <groupId>com.heroku.sdk</groupId>
-        <artifactId>heroku-maven-plugin</artifactId>
+        	<groupId>com.heroku.sdk</groupId>
+        	<artifactId>heroku-maven-plugin</artifactId>
         <version>3.0.3</version>
-      </plugin>
+      	</plugin>
 		</plugins>
 	</build>
 			
